@@ -27,7 +27,7 @@ const cristian: Engineer = {
   location:    "San Juan, Puerto Rico 🇵🇷",
   role:        "Senior Software Engineer & Technical Lead",
   experience:  "6+ years",
-  currentWork: "INprende — building & scaling production-grade web apps",
+  currentWork: "Red Ventures Puerto Rico — building & scaling production-grade web apps",
   freelance:   "CFT Services — full-stack & automation consulting",
   education:   "Computer Engineering, UPR Mayagüez",
 
