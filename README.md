@@ -107,8 +107,12 @@ const cristian: Engineer = {
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
+│  🎯  Red Ventures Puerto Rico — Senior Software Engineer            │
+│      San Juan, PR | 2026 – Present                                  │
+│      Modern software development · Automations                      │
+├─────────────────────────────────────────────────────────────────────┤
 │  🚀  INprende — Senior Software Engineer / Technical Lead            │
-│      San Juan, PR | 2024 – Present                                  │
+│      San Juan, PR | 2024 – 2026                                     │
 │      Next.js · TypeScript · AWS · GitHub Actions · Figma MCP        │
 ├─────────────────────────────────────────────────────────────────────┤
 │  🏗️  E3 Consulting — Solution Architect / Software Engineer          │
