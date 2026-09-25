@@ -1,0 +1,30 @@
+name: Contribution graph
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      # Brand v2 palette: Night/Navy base, Mint on dark, Deep Mint on light
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/contributions-dark.svg?color_snake=#20E3B2&color_dots=#12355B,#0E5B55,#0E7C6B,#17B08F,#20E3B2&color_dot_border=#0A1628&color_background=#0A1628
+            dist/contributions-light.svg?color_snake=#0E7C6B&color_dots=#DCE3E9,#A7D8CE,#5FB3A3,#2E9585,#0E7C6B&color_dot_border=#F2F5F8
+
+      - uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
